@@ -10,6 +10,9 @@ function App() {
         style={{ backgroundColor: color }}
       >
         <div className="fixed flex flex-wrap justify-center top-12 inset-x-0 px-2 mt-20">
+          <h1 className="text-white my-3 mb-6 text-2xl box-content p-2  bg-red-600 rounded-md">
+            Color Chnager
+          </h1>
           <div
             className="flex flex-wrap justify-center
          gap-3 shadow-lg bg-white px-6 py-5 rounded-3xl"
@@ -22,7 +25,7 @@ function App() {
             >
               Red
             </button>
-
+ 
             <button
               onClick={() => setColor("green")}
               className="outline-none px-5 py-1 rounded-full text-white shadow-lg"
@@ -71,9 +74,9 @@ function App() {
               Orange
             </button>
           </div>
-        </div>
-        <div className="flex justify-center  text-white  text-2xl shadow-lg py-5 rounded-lg">
-          <h1>Color Changer App</h1>
+          <h1 
+          onClick={() => setColor("olive")}
+          className="mt-6 text-lg text-white box-content p-3 rounded-2xl bg-orange-700 ">Refesh</h1>
         </div>
       </div>
     </>
